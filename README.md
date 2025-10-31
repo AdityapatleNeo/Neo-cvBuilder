@@ -7,7 +7,7 @@ for backend
 navigate server folder and enter node src/index.js
 
 
-/cv-builder
+  /cv-builder
   /resume-generator         ← React (JS) frontend
     public
     package.json
