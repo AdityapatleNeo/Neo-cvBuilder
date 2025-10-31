@@ -1,0 +1,334 @@
+/* DashboardPage Component Styles
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-headerTitle {
+  color: #8B0000;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.dashboard-buttonCreate {
+  background: #8B0000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dashboard-buttonCreate:hover {
+  background: #a60000;
+}
+
+.dashboard-emptyState {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.dashboard-emptyText {
+  color: #000;
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+.dashboard-cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-cardItem {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.dashboard-cardTitle {
+  margin: 0 0 10px;
+  color: #000;
+  font-size: 1.25rem;
+}
+
+.dashboard-cardDate {
+  margin: 0 0 15px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.dashboard-cardActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dashboard-buttonAction {
+  background: transparent;
+  border: 1px solid #8B0000;
+  color: #8B0000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-buttonAction:hover {
+  background: #8B0000;
+  color: #fff;
+} */
+
+
+/* General Styles */
+.dashboard-container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #222;
+  background: #fafafa;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8%;
+  background: linear-gradient(120deg, #e63946, #ff7f50);
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.primary-btn {
+  background: #fff;
+  color: #e63946;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.primary-btn:hover,.dashboard-buttonCreate:hover {
+  background: #fce4e4;
+  letter-spacing: 2px;
+  transform: scale(1);
+}
+
+.hero-image img {
+  width: 380px;
+  max-width: 90%;
+}
+
+/* Features */
+.features-section {
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+/* Resume List */
+.resume-section {
+  padding: 4rem 8%;
+
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-cardsGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  align-content: center;
+}
+
+.dashboard-cardItem {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.dashboard-cardItem:hover {
+  transform: translateY(-4px);
+}
+
+.dashboard-cardTitle {
+  color: #e63946;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-cardActions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dashboard-buttonAction {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.dashboard-buttonAction.secondary {
+  background: #444;
+}
+
+.dashboard-buttonCreate {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dashboard-buttonCreate:hover {
+  background: #c62828;
+}
+
+/* Pricing */
+.pricing-section {
+  background: #fff5f5;
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pricing-card.pro {
+  border: 2px solid #e63946;
+}
+
+.pricing-card h4 {
+  color: #e63946;
+  font-size: 1.5rem;
+}
+
+/* Testimonials */
+.testimonials-section {
+  padding: 4rem 8%;
+  background: #fdfdfd;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.testimonial {
+  background: white;
+  border-left: 4px solid #e63946;
+  padding: 1.2rem;
+  max-width: 300px;
+  border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .hero-image img {
+    margin-top: 2rem;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

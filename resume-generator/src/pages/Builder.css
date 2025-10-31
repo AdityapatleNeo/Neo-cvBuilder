@@ -1,0 +1,98 @@
+.rbuilder-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.rbuilder-sectionTitle {
+  color: #8B0000; 
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.rbuilder-form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.rbuilder-form input[type="text"],
+.rbuilder-form input[type="email"],
+.rbuilder-form input[type="password"],
+.rbuilder-form textarea,
+.rbuilder-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.rbuilder-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.rbuilder-buttonPrimary {
+  background: #8B0000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.rbuilder-buttonPrimary:hover {
+  background: #a60000;
+}
+
+.rbuilder-buttonSecondary {
+  background: transparent;
+  border: 1px solid #8B0000;
+  color: #8B0000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.rbuilder-buttonSecondary:hover {
+  background: #8B0000;
+  color: #fff;
+}
+
+.rbuilder-previewContainer {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  height: auto;
+  overflow: auto;
+}
+
+.rbuilder-previewContainer h2,
+.rbuilder-previewContainer h3,
+.rbuilder-previewContainer p {
+  margin: 0 0 10px;
+}
+
+.rbuilder-previewContainer ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .rbuilder-buttons {
+    flex-direction: column;
+  }
+
+  .layout-variant {
+    margin-bottom: 30px;
+  }
+}
